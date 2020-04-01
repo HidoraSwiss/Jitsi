@@ -19,7 +19,7 @@ onInstall:
     - apt-get -y install jitsi-meet
     - sed -i 's/$EMAIL/${user.email}/g' /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
     - sed -i '21,22d' /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
-#    - /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
+    - /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
 
   - restartContainers:
     - nodeType: debian-vps
