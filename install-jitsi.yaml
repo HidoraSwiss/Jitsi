@@ -7,7 +7,9 @@ onInstall:
     - wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
     - sh -c "echo 'deb https://download.jitsi.org stable/' > /etc/apt/sources.list.d/jitsi-stable.list"
     - apt-get -y update
+    - sleep 30s
     - apt-get -y upgrade
+    - sleep 30s
 
   - log: Install Jisti
   - cmd[debian-vps]:
