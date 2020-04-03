@@ -20,5 +20,5 @@ onInstall:
     - sed -i '21,22d' /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
     - sh /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
 
-  - restartContainers:
-    - nodeType: debian-vps
+#  - restartContainers:
+#    - nodeType: debian-vps
